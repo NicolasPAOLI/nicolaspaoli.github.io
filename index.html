@@ -1,7 +1,322 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="stylesheets/style.css" />
+  <link rel="icon" href="images/favicon.png" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css" integrity="sha384-QokYePQSOwpBDuhlHOsX0ymF6R/vLk/UQVz3WHa6wygxI5oGTmDTv8wahFOSspdm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css" integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css" integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
+
+  <script defer src="build/minified.js"></script>
+
+  <title>Nicolas Paoli | Official Home Page | Site Officiel</title>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+  <navbar id="navbar" class="navbar navbar-container navbar-zero-height navbar-fixed">
+    <div class="navbar-left">
+      <div class="navbar-item navbar-brand">
+        <a href="/">Nicolas Paoli.</a>
+      </div>
+    </div>
+    <div class="navbar-right">
+      <div id="about-tab" class="navbar-item navbar-link active"><a href="/index.html">about</a></div>
+      <div id="research-tab" class="navbar-item navbar-link"><a href="/research.html">research</a></div>
+      <div id="contact-tab" class="navbar-item navbar-link"><a href="#contact">contact</a></div>
+    </div>
+  </navbar>
+
+  <section id="first-section" class="category">
+    <div class="row">
+      <div class="col-1">
+
+      </div>
+
+      <div class="col-5">
+        <div>
+          <h1>Hi, I'm Antoine</h1>
+          <p>
+            I'm a Computer-Science Ph.D. student interested in Semantic REST APIs, Linked Data
+            and distributed architectures who try to make pragmatic things people can reuse.
+            Also, sometimes I write articles and talk to colleagues or conferences.
+          </p>
+        </div>
+        <div>
+          <div class="buttons-line">
+            <!-- <a class="button button-square rounded" href=""><i class="fab fa-google fa-2x"></i></a> -->
+            <a class="button button-square rounded" href="https://github.com/NicolasPaoli"><i class="fab fa-github fa-2x"></i></a>
+            <a class="button button-square rounded" href="https://www.linkedin.com/in/nicolas-paoli-6a79b726/"><i class="fab fa-linkedin-in fa-2x"></i></a>
+            <a class="button button-square rounded button-last" href="/research.html"><i class="fas fa-university fa-2x"></i></a>
+          </div>
+          <div id="logos" class="buttons-line">
+            <a href="http://technologies.fabernovel.com/en/" class="button button-img"><img class="img-32-height" src="images/fabernovel_logo_new.png" /></a>
+            <a href="https://www.diverse-team.fr/" class="button button-img"><img class="img-32-height" src="https://diverse-team.github.io/img/diverse.png" /></a>
+            <a href="https://www.inria.fr/en/" class="button button-img"><img class="img-32-height" src="images/inria_logo.jpg" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="personal-image" class="flex-row-right paddingless">
+        <img src="images/me.jpg" alt="A picture of myself" />
+      </div>
+    </div>
+
+    <img id="scroll-animation" src="images/scroll.gif" width="30px" height="45px" class="center" />
+
+  </section>
+
+  <section id="research" class="category category-dark">
+    <div class="row">
+      <div class="category-content category-two-col">
+        <div class="category-col-left">
+          <img src="images/hypermedia-example.png" />
+        </div>
+        <div class="category-col-right">
+          <div class="category-title">
+            <h1>The Research I Do</h1>
+            <p class="subtitle">As a Computer-Science Ph.D. student</p>
+          </div>
+          <p>
+            I focus my research in the field of distributed information systems
+            towards two goals:
+          </p>
+            <ul>
+              <li>reducing the coupling between components exposing or consuming Web APIs</li>
+              <li>making the IS easier to query with no prior knowledge of its architecture</li>
+            </ul>
+          <p>
+            Therefore, I read a lot about REST APIs, the Semantic Web, Linked Data,
+            Open Data, Linked Data Platform and Semantic REST APIs.
+          </p>
+          <p><a class="button button-dark rounded" href="/research.html"><i class="fas fa-university"></i> Discover more</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="what-Id-like-to-achieve" class="category category-dark">
+    <div class="row">
+      <div class="category-one-col">
+
+        <div class="category-title">
+          <h1>What I'd like to achieve during my Ph.D.</h1>
+          <p class="subtitle text-primary">
+            Any kind of help is welcome
+          </p>
+        </div>
+
+        <ul>
+          <li>Contribute to W3C standards</li>
+          <li>Do at least one contribution to a major conference or journal (WWW, ICSE, ...)</li>
+          <li>Have major contributions in the industry (Scala IO, Scala days, Devoxx, ...)</li>
+          <li>Bring tools to developers to ease the development of Semantic REST APIs</li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="blog-posts" class="category">
+    <div class="row">
+      <div class="category-one-col">
+          <div class="category-title">
+            <h1>Blog Posts</h1>
+            <p class="subtitle text-primary">I wrote 13 articles, in French or English (or both), for diverse targets and purposes.</p>
+          </div>
+
+          <div class="l-grid">
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="l-img-container"><img src="https://www.fabernovel.com/content/uploads/2019/03/Article_5-1024x414.png" /></div>
+                </div>
+                <div class="card-body">
+                  <p class="l-tags card-subtitle">
+                    <span class="tag">SemanticREST</span>
+                    <span class="tag">Thesis</span>
+                    <span class="tag">Vision</span>
+                    <span class="tag">french&english</span>
+                  </p>
+                  <h3 class="card-title">Hypermedia and Semantics in APIs: a powerful combination</h3>
+                  <div class="card-footer">
+                    <p><i class="fas fa-clock font-regular text-base-color"></i><span class="date font-heavy">Jan, 19 2018</span></p>
+                    <p>
+                      <a class="card-read-button" target="_blank" href="https://en.fabernovel.com/insights/tech-en/hypermedia-and-semantics-in-apis-a-powerful-combination">
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+            </div>
+
+          <div class="card">
+            <div class="card-header">
+                <div class="l-img-container"><img src="https://www.fabernovel.com/content/uploads/2019/03/Couverture-1.png" /></div>
+            </div>
+            <div class="card-body">
+              <p class="l-tags card-subtitle">
+                <span class="tag">Study</span>
+                <span class="tag">InformationSystem</span>
+                <span class="tag">french&english</span>
+              </p>
+              <h3 class="card-title">Study: What are IS’ main issues?</h3>
+              <div class="card-footer">
+                <p><i class="fas fa-clock font-regular text-base-color"></i><span class="date font-heavy">Jan, 19 2018</span></p>
+                <p>
+                  <a class="card-read-button" target="_blank" href="https://en.fabernovel.com/insights/tech-en/study-what-are-is-main-issues">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+            <div class="card">
+              <div class="card-header">
+                  <div class="l-img-container"><img src="https://www.fabernovel.com/content/uploads/2019/03/Couverture-1.png" /></div>
+              </div>
+              <div class="card-body">
+                <p class="l-tags card-subtitle">
+                  <span class="tag">french&english</span>
+                  <span class="tag">Series</span>
+                  <span class="tag">API</span>
+                </p>
+                <h3 class="card-title">[series] APIs with superpowers</h3>
+                <div class="card-footer">
+                  <p><i class="fas fa-clock font-regular text-base-color"></i><span class="date font-heavy">Mar & Apr 2019</span></p>
+                  <p>
+                    <a class="card-read-button" target="_blank" href="https://en.fabernovel.com/insights/stories/apis-with-superpowers">
+                      <i class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                  <div class="l-img-container"><img src="https://cdn-images-1.medium.com/max/800/0*MPcgPwVYj6m7C1Ta." /></div>
+              </div>
+              <div class="card-body">
+                <p class="l-tags card-subtitle">
+                  <span class="tag">Java</span>
+                  <span class="tag">ReactiveProgramming</span>
+                  <span class="tag">Tutorial</span>
+                </p>
+                <h3 class="card-title">[Tuto] Building a Reactive RESTful API with Spring WebFlux Java</h3>
+                <div class="card-footer">
+                  <p><i class="fas fa-clock font-regular text-base-color"></i><span class="date font-heavy">May, 11 2018</span></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                  <div class="l-img-container"><img src="https://cdn-images-1.medium.com/max/800/1*jxkI_DLbL1xJMeBzNsj4Mw.jpeg" /></div>
+              </div>
+              <div class="card-body">
+                <p class="l-tags card-subtitle">
+                  <span class="tag">Java</span>
+                  <span class="tag">Reactor</span>
+                  <span class="tag">Tutorial</span>
+                </p>
+                <h3 class="card-title">[Reactor Java #4] How to take control over the execution of Mono and Flux ?</h3>
+                <div class="card-footer">
+                  <p><i class="fas fa-clock font-regular text-base-color"></i><span class="date font-heavy">Jan, 21 2018</span></p>
+                  <p>
+                    <a class="card-read-button" target="_blank" href="https://medium.com/@cheron.antoine/reactor-java-4-how-to-take-control-over-the-execution-of-mono-and-flux-ead31dc066">
+                      <i class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                  <div class="l-img-container"><img src="https://cdn-images-1.medium.com/max/800/1*d7gQ1HJAQ8awBU8l_0j8ag.jpeg" /></div>
+              </div>
+              <div class="card-body">
+                <p class="l-tags card-subtitle">
+                  <span class="tag">Java</span>
+                  <span class="tag">Reactor</span>
+                  <span class="tag">Tutorial</span>
+                </p>
+                <h3 class="card-title">[Reactor Java #2] How to manipulate the data inside Mono and Flux ?</h3>
+                <div class="card-footer">
+                  <p><i class="fas fa-clock font-regular text-base-color"></i><span class="date font-heavy">Jan, 18 2018</span></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog-posts" class="category category-dark">
+    <div class="row">
+      <div class="category-one-col">
+          <div class="category-title">
+            <h1>In Progress ...</h1>
+            <p class="subtitle text-primary">This website is under construction. Please come back later to know more about me.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="category category-dark category-last">
+    <div class="container">
+      <div class="row">
+        <div class="category-content category-two-col">
+          <div class="category-col-left">
+
+            <div class="category-title">
+              <h1>Contact.</h1>
+              <p class="subtitle text-primary">interested in my research ?</p>
+            </div>
+            <p>
+              We can either chat via email, or go get a coffee or grab a beer somewhere in Paris.
+            </p>
+
+            <div>
+              <p class="uppercase font-small"><b>Other subjects I'm interested in</b></p>
+              <p class="icons-group">
+                <i alt="education" class="fas fa-graduation-cap fa-2x"></i>
+                <i alt="entrepreneurship" class="fas fa-briefcase fa-2x"></i>
+                <i alt="how the world is changing" class="fas fa-globe fa-2x"></i>
+                <i alt="cars" class="fas fa-car fa-2x"></i>
+                <i alt="motorbikes" class="fas fa-motorcycle fa-2x"></i>
+              </p>
+            </div>
+
+          </div>
+
+          <div class="category-col-right">
+            <div class="button-group-vertical">
+              <button class="button button-simple bg-white"><span class="text-primary">more about my research</span></button>
+              <a href="mailto:ns.paoli@gmail.com" class="button button-simple bg-white"><span class="text-primary">send me an email</span></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row center" style="margin-top: 30px;">
+        <div class="inline-link-group">
+          <a class="white-link" href="https://github.com/NicolasPaoli"> GitHub </a>
+          <a class="white-link" href="https://www.linkedin.com/in/nicolas-paoli-6a79b726/"> LinkedIn </i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
